@@ -39,7 +39,6 @@ RSpec.describe GroupSorter do
     end
 
     it 'each group has 4 members' do
-      puts @groups
       expect(@groups[0][:members].length).to eq(4)
     end
   end
