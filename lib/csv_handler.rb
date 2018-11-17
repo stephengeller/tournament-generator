@@ -1,12 +1,15 @@
+require 'csv'
+
 class CSVHandler
   def initialize(filename)
     @filename = filename
   end
 
   def write(contents)
-    f = File.open(@filename,'w+')
-    f.write(contents)
-    f.close
+    puts contents
+    CSV.open(@filename, 'w+') do |csv|
+      csv << [contents]
+    end
   end
 
   def read(filename = @filename)

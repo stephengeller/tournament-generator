@@ -1,4 +1,4 @@
-require "tournament/generator/version"
+require 'tournament/generator/version'
 
 module Tournament
   module Generator
