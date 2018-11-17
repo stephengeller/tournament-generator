@@ -10,7 +10,7 @@ RSpec.describe CSVHandler do
     file = File.read(@filename)
     expect(file).to eq('foo')
   end
-g
+
   it 'reads the contents of a CSV file' do
     @csv_handler.write('foo')
     contents = @csv_handler.read
