@@ -6,7 +6,6 @@ class CSVHandler
   end
 
   def write(contents)
-    puts contents
     CSV.open(@filename, 'w+') do |csv|
       csv << [contents]
     end
