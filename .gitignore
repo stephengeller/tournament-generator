@@ -11,3 +11,6 @@
 .rspec_status
 .idea/
 test_file
+.rubocop.yml
+.rubocop_todo.yml
+output.csv
