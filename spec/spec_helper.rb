@@ -3,7 +3,7 @@ require 'tournament/generator'
 require 'csv_handler'
 require 'simplecov'
 require 'simplecov-console'
-require 'handler'
+require 'group_sorter'
 
 SimpleCov.formatter = SimpleCov::Formatter::Console
 SimpleCov.start

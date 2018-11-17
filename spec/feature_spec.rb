@@ -2,9 +2,8 @@ RSpec.describe 'feature' do
   xit 'randomises players into groups of 4' do
     names = %w[A B C D E F G H I J]
     players = generate_players(names)
-    handler = Handler.new('output.csv')
-    puts players
-    handler.create_tournament(players)
+    tournament_generator = Tournament::Generator.new('output.csv')
+    tournament_generator.create_tournament(players)
     contents = File.read('output.csv')
     expect(contents).to eq(players)
   end

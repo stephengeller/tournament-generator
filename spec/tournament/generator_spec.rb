@@ -1,5 +1,5 @@
 RSpec.describe Tournament::Generator do
   before(:each) do
-    puts 'foo'
+    @generator = Tournament::Generator.new('spec/test_file.csv')
   end
 end

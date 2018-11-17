@@ -1,4 +1,3 @@
-require 'csv_handler'
 
 class Handler
   def initialize(csv_file)

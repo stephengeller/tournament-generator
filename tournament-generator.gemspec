@@ -1,10 +1,9 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "tournament/generator/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "tournament-generator"
-  spec.version       = Tournament::Generator::VERSION
+  spec.version       = '0.1.0'
   spec.authors       = ["stephengeller"]
   spec.email         = ["stephen.geller@hotmail.com"]
   spec.summary       = "tournament generator"
